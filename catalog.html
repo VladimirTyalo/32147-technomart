@@ -5,137 +5,66 @@
   <title>Техномарт | Каталог</title>
 </head>
 <body>
-
   <header class="main-header">
-    <div class="container">
 
-      <div class="top-menu">
-        <div class="top-menu__logo">Техномарт</div>
-        <form class="top-menu__search" action="www.google.com" method="get" name="search-form">
+    <div class="top-header">
+      <div class="container">
+        <div class="logo">Техномарт</div>
+        <form class="top-header__search" action="#" method="get" name="search-form">
           <label for="search">Поиск:</label>
-          <input type="text" id="search" name="search">
+          <input id="search" type="text" name="search">
         </form>
-        <div class="top-menu__bookmarks">
-          <a class="top-menu__bookmark-link" href="#">Закладки</a>
+        <div class="top-header__bookmarks">
+          <a class="top-header__bookmark-link" href="#">Закладки</a>
           <i class="number-of-bookmarks">0</i>
         </div>
-        <div class="top-menu__cart">
-          <a class="top-menu__cart-name" href="#">Корзина </a>
+        <div class="top-header__cart">
+          <a class="top-header__cart-name" href="#">Корзина </a>
           <i class="number-of-items">10</i>
         </div>
-        <a class="top-menu__order" href="#">Оформить заказ</a>
+        <a class="top-header__order" href="#">Оформить заказ</a>
       </div>
+    </div>
 
-      <div class="middle-menu">
-        <div class="middle-menu__info">
-          Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта
-        </div>
+    <div class="mid-header">
+      <div class="container">
 
-        <div class="middle-menu__contacts">
-          <a class="middle-menu__phone" href="tel:+78125550505">
-            +7 (812) 555-05-55
-          </a>
-          <div class="middle-menu-adress">
-            г. Санкт-Петербург, ул. Б. Конюшенская, д. 19/8
+        <div class="mid-header__container">  <!-- ??? for grouping all 3 blocks -->
+          <div class="promo-block">
+            Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+          </div>
+          <div class="header-contacts">
+            <a class="header-contacts__phone" href="tel:+78125550505">
+              +7 (812) 555-05-55
+            </a>
+            <div class="header-contacts__adress">
+              г. Санкт-Петербург, ул. Б. Конюшенская, д. 19/8
+            </div>
+          </div>
+          <div class="user-block">
+            <a class="user-block__logout"  href="#">Равшан Джамшутович</a>
+            <a class="user-block__oreders" href="#">Мои заказы</a>
+            <a class="user-block__account" href="#">Личный кабинет</a>
           </div>
         </div>
 
-        <div class="middle-menu__user-block">
-            <a class="middle-menu__logout"  href="#">Равшан Джамшутович</a>
-            <a class="middle-menu__my-orders" href="#">Мои заказы</a>
-            <a class="middle-menu__account" href="#">Личный кабинет</a>
-
-        </div>
-      </div>
-      <nav class="menu-nav">
-        <ul>
-          <li class="menu-nav__item"><a href="#">Главная</a></li>
-          <li class="menu-nav__item"><a href="#">Компания</a></li>
-          <li class="menu-nav__item"><a href="#">Каталог</a></li>
-          <li class="menu-nav__item"><a href="#">Новости</a></li>
-          <li class="menu-nav__item"><a href="#">Спецпредложения</a></li>
-          <li class="menu-nav__item"><a href="#">Доставка</a></li>
-          <li class="menu-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-
-  <main class="main-content">
-    <div class="container">
-
-
-
-    </div>
-  </main>
-
-
-
-  <footer class="main-footer">
-    <div class="container">
-      <div class="top-menu">
-        <div class="top-menu__logo">Техномарт</div>
-
-        <nav class="menu-nav menu-nav--top">
+        <nav class="main-nav">
           <ul>
-            <li class="menu-nav__item"><a href="#">Комрании</a></li>
-            <li class="menu-nav__item"><a href="#">Новости</a></li>
-            <li class="menu-nav__item"><a href="#">Каталог</a></li>
-            <li class="menu-nav__item"><a href="#">Доставка</a></li>
-            <li class="menu-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Компания</a></li>
+            <li class="main-nav__item"><a href="#">Каталог</a></li>
+            <li class="main-nav__item"><a href="#">Новости</a></li>
+            <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
+            <li class="main-nav__item"><a href="#">Доставка</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="main-footer__middle">
-        <div class="main-footer__contancts">
-          <div class="main-footer__adress">
-            г. Санкт-Петербург, ул. Б. Конюшенская, д. 19/8
-          </div>
-          <div class="main-footer__phone">
-            +7 (812) 555-05-55
-          </div>
-        </div>
-
-        <nav class="menu-nav menu-nav--middle">
-          <li class="menu-nav__item menu-nav__item--mid"><a href=""></a></li>
-          <li class="menu-nav__item menu-nav__item--mid"><a href=""></a></li>
-          <li class="menu-nav__item menu-nav__item--mid"><a href=""></a></li>
-          <li class="menu-nav__item menu-nav__item--mid"><a href=""></a></li>
-        </nav>
-
-      </div>
-        <!-- TODO -->
-      <div class="footer">
-        <secion class="footer__copyright">
-          &#64 2010-2016 Компания "Техномарт"<br>
-          Все права защищены
-        </secion>
-        <section class="footer-social">
-          <a class="footer-social__btn footer-social__btn--vk" href="#"></a>
-          <a class="footer-social__btn footer-social__btn--fb" href="#"></a>
-          <a class="footer-social__btn footer-social__btn--inst" href="#"></a>
-        </section>
-
-        <section class="footer__feedback">
-          <div class="footer__text">Обратная связь</div>
-          <a class="footer__mail"  href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-        </section>
-
-        <section class="footer__hire-us">
-          <div class="footer__text">Разрабатоно-</div>
-          <a href="http://www.htmlacademy.ru">htmlacademy.ru</a>
-        </section>
       </div>
     </div>
-  </footer>
-
+  </header>
 
 
 </body>
