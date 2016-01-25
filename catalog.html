@@ -86,13 +86,14 @@
           <div class="filter-wrapper">
             <div class="filter-wrapper__title">Фильтр</div>
 
-            <form id="filter">
-                  <!-- TODO  price-range -->
+            <form id="filter" action="/echo" method="post"
+                  oninput="min.value=price-min.value">
+              <!-- TODO  price-range -->
               <div class="price-range">
                 <div class="price-range__title">Цена</div>
                 <div class="price-range__scroll-box">
-                  <input type="range" name="price-min" min="0">
-                  <input type="range" name="price-max" max="50000">
+                  <input id="price-min" type="range" name="price-min" min="0">
+                  <input id="price-max" type="range" name="price-max" max="50000">
                 </div>
                 <output class="price-range__min" name="min">0</output>
                 <div class="price-range__min-max">-</div>     <!-- ????? output:after -->
