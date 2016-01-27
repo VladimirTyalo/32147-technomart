@@ -12,11 +12,11 @@
 
 /*        BASE           */
 body {
-  font-family: "Cuprum", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-color: #000000;
+  color: #000000;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-color: #000000;
+  color: #32425c;
 }
 
 

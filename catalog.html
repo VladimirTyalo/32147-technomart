@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Техномарт | Каталог</title>
 </head>
@@ -10,7 +9,7 @@
   <header class="main-header">
 
     <div class="top-header">
-      <div class="container">  <!-- ??? -->
+      <div class="container">
         <a class="logo" href="index.html">Техномарт</a>
         <form class="top-header__search" action="#" method="get" name="search-form">
           <label for="search">Поиск:</label>
@@ -81,51 +80,50 @@
           <li class="breadcrumb__item"><span>Перфораторы</span></li>
         </ul>
 
-        <div class="catalog__title">Перфораторы</div>
+        <h2 class="catalog__title">Перфораторы</h2>
 
         <div class="catalog-preview"> <!-- от заголовка перфораторы до пагинации включительно -->
 
           <div class="filter-column">
             <div class="filter-column__title">Фильтр</div>
 
-            <form class="form"  id="form" action="#" method="get"
-               oninput="min.value=parseInt(price-min.value)">
-              <!-- TODO  price-range -->
-              <div class="price-range">
-                <div class="price-range__title">Цена</div>
-                <div class="price-range__scroll-box">
-                  <input id="price-min" type="range" name="price-min" min="0">
-                  <input id="price-max" type="range" name="price-max" max="50000">
-                </div>
-                <output class="price-range__min" name="min" for="price-min">0</output>
-                <div class="price-range__min-max">-</div>     <!-- ????? output:after -->
-                <output class="price-range__max" name="max" for="price-max">30000</output>
+            <form class="form"  id="form" action="#" method="get">
+            <!-- TODO  price-range -->
+            <div class="price-range">
+              <div class="price-range__title">Цена</div>
+              <div class="price-range__scroll-box">
+                <input id="price-min" type="range" name="price-min" min="0">
+                <input id="price-max" type="range" name="price-max" max="50000">
               </div>
+              <output class="price-range__min" name="min" for="price-min">0</output>
+              <div class="price-range__min-max">-</div>     <!-- ????? output:after -->
+              <output class="price-range__max" name="max" for="price-max">30000</output>
+            </div>
 
-              <div class="makers">
-                <input id="bosch" type="checkbox" checked>
-                <label for="bosch">Bosch</label>
-                <input id="interskol" type="checkbox">
-                <label for="interskol">Интерскол</label>
-                <input id="makita" type="checkbox" checked>
-                <label for="makita">Makita</label>
-                <input id="dewalt" type="checkbox">
-                <label for="dewalt">DeWalt</label>
-                <input id="hitachi" type="checkbox">
-                <label for="hitachi">Hitachi</label>
-              </div>
+            <div class="makers">
+              <input id="bosch" type="checkbox" checked>
+              <label for="bosch">Bosch</label>
+              <input id="interskol" type="checkbox">
+              <label for="interskol">Интерскол</label>
+              <input id="makita" type="checkbox" checked>
+              <label for="makita">Makita</label>
+              <input id="dewalt" type="checkbox">
+              <label for="dewalt">DeWalt</label>
+              <input id="hitachi" type="checkbox">
+              <label for="hitachi">Hitachi</label>
+            </div>
 
-              <div class="power-supply">
-                <div class="power-supply__title">Питание</div>
-                <input id="accum" type="radio" checked name="supply" value="accum">
-                <label for="accum">Аккумуляторные</label>
-                <input id="cable" type="radio" name="supply" value="cable">
-                <label for="cable">Сетевые</label>
-              </div>
+            <div class="power-supply">
+              <div class="power-supply__title">Питание</div>
+              <input id="accum" type="radio" checked name="supply" value="accum">
+              <label for="accum">Аккумуляторные</label>
+              <input id="cable" type="radio" name="supply" value="cable">
+              <label for="cable">Сетевые</label>
+            </div>
 
-              <button class="form__button" type="submit" form="form">Показать</button>
+            <button class="form__button" type="submit" form="form">Показать</button>
 
-            </form>
+          </form>
           </div>
 
           <div class="preview-column">
@@ -255,7 +253,7 @@
 
       <div class="product-use">
         <div class="container">
-          <h2 class="product-use__title">Пара слов о перфораторах</h2>
+          <div class="product-use__title">Пара слов о перфораторах</div>
           <p class="product-use__text">
             Перфоратор универсальный строительный инструмент. Предназначен для
             сверления и долбления отверстие в кирпиче, бетоне и камне.
