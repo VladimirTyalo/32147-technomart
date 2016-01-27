@@ -1,22 +1,36 @@
 
-/* sequense of properties in individual class */
-
+/* sequense of properties */
 /* position */
-
 /* box model */
-
 /* typography */
-
 /*  styling */
-
 /* animation */
-
 /* other */
 
 
 
 
 /*        BASE           */
+body {
+  font-family: "Cuprum", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-color: #000000;
+}
+
+h1 {
+  /* no h1 teg in html */
+
+}
+
+h2 {
+  font-family: "Cuprum", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  font-color: #000000;
+}
 
 
 /*        LAYOUT         */
