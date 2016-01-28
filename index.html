@@ -14,11 +14,11 @@
         <div class="logo">Техномарт</div>
         <form class="top-header__search" action="#" method="get" name="search-form">
           <label for="search">Поиск:</label>
-          <input id="search" type="text" name="search">
+          <input id="search" type="search" name="search">
         </form>
         <div class="top-header__bookmarks">
           <a class="top-header__bookmark-link" href="#">Закладки</a>
-          <i class="top-header__bookmarks">0</i>
+          <i class="top-header__bookmarks-amount">0</i>
         </div>
         <div class="top-header__cart">
           <a class="top-header__cart-name" href="#">Корзина </a>
@@ -133,8 +133,8 @@
       </div> <!-- features -->
 
       <section class="tools">
-        <div class="tools-title">
-          <h2 class="tools-title__text">Популярные товары:</h2>
+        <div class="popular-items">
+          <h2 class="popular-items__text">Популярные товары:</h2>
           <a class="index-button" href="#">Все популярные товары</a>
         </div>
         <div class="tools-content-wrapper">
@@ -143,38 +143,38 @@
             <img class="product-post__img" src="img/bfg-9000.jpg" alt="BOSCH BFG 9000" width="144" height="128">
             <div class="product-post__text">Перфоратор BOSCH BFG 9000</div>
             <div class="product-post__old-price">32500 Р.</div>
-            <div class="product-post__new-price">25500 Р.</div>
+            <a class="product-post__btn" href="#">25500 Р.</a>
           </article>
           <article class="product-post">
             <!-- TODO размеры картинок после вебинара по фотошоп -->
             <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="144" height="128">
             <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
             <div class="product-post__old-price">22500 Р.</div>
-            <div class="product-post__new-price">15500 Р.</div>
+            <a class="product-post__btn" href="#">15500 Р.</a>
           </article>
           <article class="product-post">
             <!-- TODO размеры картинок после вебинара по фотошоп -->
             <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="144" heigh="128">
             <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
             <div class="product-post__old-price">30500 Р.</div>
-            <div class="product-post__new-price">25500 Р.</div>
+            <a class="product-post__btn" href="#">25500 Р.</a>
           </article>
           <article class="product-post product-post--new">
             <!-- TODO размеры картинок после вебинара по фотошоп -->
             <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="144" height="128">
             <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
             <div class="product-post__old-price"></div>
-            <div class="product-post__new-price">12500 Р.</div>
+            <a class="product-post__btn" href="#">12500 Р.</a>
           </article>
         </div>
       </section>
 
       <section class="brands">
-        <div class="brands-title">
-          <h2 class="brands-title__text">Популярные производители:</h2>
+        <div class="popular-items">
+          <h2 class="popular-items__text">Популярные производители:</h2>
           <a class="index-button" href="#">Все производители</a>
         </div>
-        <div class="brands-content-wrapper">
+        <a class="brands-content-wrapper">
           <!-- TODO размеры картинок после вебинара по фотошоп -->
           <a class="brand-logo" href="#"><img src="img/bosch.jpg" width="220" height="145" alt="Bosch"></a>
           <a class="brand-logo" href="#"><img src="img/Makita.jpg" width="220" height="145" alt="Makita"></a>
@@ -184,7 +184,7 @@
           <a class="brand-logo" href="#"><img src="img/LG.jpg" width="220" height="145" alt="LG"></a>
           <a class="brand-logo" href="#"><img src="img/AEG.jpg" width="220" height="145" alt="AEG"></a>
           <a class="brand-logo" href="#"><img src="img/Metabo.jpg" width="220" height="145" alt="Metabo"></a>
-        </div>
+        </a>
       </section> <!-- promo brands -->
 
 
@@ -210,7 +210,7 @@
 
           <div class="services-slider__inner">
             <div class="services-slider__slides">
-              <div class="slide">
+              <div class="services-slider__slide">
                 <div class="slide__title">Доставка</div>
                 <p class="slide__text">
                   Мы с удовольствием доставим ваш товар прямо
@@ -219,14 +219,14 @@
                   поднимая его на ваш этаж!
                 </p>
               </div>
-              <div class="slide">
+              <div class="services-slider__slide">
                 <div class="slide__title">Гарантия</div>
                 <p class="slide__text">
                   Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit. Enim, dolore!
                 </p>
               </div>
-              <div class="slide">
+              <div class="services-slider__slide">
                 <div class="slide__title">Кредит</div>
                 <p class="slide__text">
                   Lorem ipsum dolor sit amet, consectetur

@@ -13,7 +13,7 @@
         <a class="logo" href="index.html">Техномарт</a>
         <form class="top-header__search" action="#" method="get" name="search-form">
           <label for="search">Поиск:</label>
-          <input id="search" type="text" name="search">
+          <input id="search" type="search" name="search">
         </form>
         <div class="top-header__bookmarks">
           <a class="top-header__bookmark-link" href="#">Закладки</a>
@@ -80,9 +80,9 @@
           <li class="breadcrumb__item"><span>Перфораторы</span></li>
         </ul>
 
-        <h2 class="catalog__title">Перфораторы</h2>
+        <h2 class="inner-main-title">Перфораторы</h2>
 
-        <div class="catalog-preview"> <!-- от заголовка перфораторы до пагинации включительно -->
+
 
           <div class="filter-column">
             <div class="filter-column__title">Фильтр</div>
@@ -100,7 +100,8 @@
               <output class="price-range__max" name="max" for="price-max">30000</output>
             </div>
 
-            <div class="makers">
+            <div class="filter-options">
+              <div class="filter-options__title">Производители</div>
               <input id="bosch" type="checkbox" checked>
               <label for="bosch">Bosch</label>
               <input id="interskol" type="checkbox">
@@ -113,8 +114,8 @@
               <label for="hitachi">Hitachi</label>
             </div>
 
-            <div class="power-supply">
-              <div class="power-supply__title">Питание</div>
+            <div class="filter-options">
+              <div class="filter-options__title">Питание</div>
               <input id="accum" type="radio" checked name="supply" value="accum">
               <label for="accum">Аккумуляторные</label>
               <input id="cable" type="radio" name="supply" value="cable">
@@ -128,12 +129,12 @@
 
           <div class="preview-column">
             <div class="sort-menu">
-              <div class="sort-menu__title">Сортировка</div>
-              <div class="sort-menu__by-price">По цене</div>
-              <div class="sort-menu__by-type">По типу</div>
-              <div class="sort-menu__by-functionality">По функциональности</div>
-              <div class="sort-menu__ascending"></div>
-              <div class="sort-menu__descending"></div>
+              <div class="sort-menu__item">Сортировка</div>
+              <div class="sort-menu__item">По цене</div>
+              <div class="sort-menu__item">По типу</div>
+              <div class="sort-menu__item">По функционалу</div>
+              <div class="sort-menu__arrow"></div>
+              <div class="sort-menu__arrow"></div>
             </div>
 
             <div class="posters-container">
@@ -248,7 +249,7 @@
             </ul>
           </div>   <!-- preview column -->
 
-        </div>      <!-- catalog preview -->
+
       </div>        <!-- container -->
 
       <div class="product-use">
