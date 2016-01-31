@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Техномарт | Home</title>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
 </head>
 <body>
 
@@ -13,15 +14,15 @@
       <div class="container"> <!-- ?? -->
         <div class="logo">Техномарт</div>
         <form class="top-header__search" action="#" method="get" name="search-form">
-          <label for="search">Поиск:</label>
-          <input id="search" type="search" name="search">
+          <label class="top-header__search-label" for="search">Поиск:</label>
+          <input class="top-header__search-input" id="search" type="search" name="search">
         </form>
         <div class="top-header__bookmarks">
-          <a class="top-header__bookmark-link" href="#">Закладки</a>
+          <a class="top-header__bookmark-link" href="#">Закладки:</a>
           <i class="top-header__bookmarks-amount">0</i>
         </div>
         <div class="top-header__cart">
-          <a class="top-header__cart-name" href="#">Корзина </a>
+          <a class="top-header__cart-name" href="#">Корзина:</a>
           <i class="top-header__items">0</i>
         </div>
         <a class="top-header__order" href="#">Оформить заказ</a>
@@ -97,22 +98,24 @@
             <label for="button-1"></label>
             <label for="button-2"></label>
           </div>
-          <div class="index-slider__slides">
-            <div class="index-slider__slide">
-              <img src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
-              <div class="index-slider__text">
-                <div class="index-slider__title">Перфораторы</div>
-                <div class="index-slider__caption">Настоящие мужские игрушки</div>
+          <div class="index-slider__inner">
+            <div class="index-slider__slides">
+              <div class="index-slider__slide">
+                <img src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
+                <div class="index-slider__text">
+                  <div class="index-slider__title">Перфораторы</div>
+                  <div class="index-slider__caption">Настоящие мужские игрушки</div>
+                </div>
+                <a class="index-button index-slider__btn" href="#">Открыть каталог</a>
               </div>
-              <a class="index-button" href="#">Открыть каталог</a>
-            </div>
-            <div class="index-slider__slide">
-              <img src="img/index-slider-2.jpg" width="620" height="266" alt="Дрели">
-              <div class="index-slider__text">
-                <div class="index-slider__title">Дрели</div>
-                <div class="index-slider__caption">Соседям на радость!</div>
+              <div class="index-slider__slide">
+                <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
+                <div class="index-slider__text">
+                  <div class="index-slider__title">Дрели</div>
+                  <div class="index-slider__caption">Соседям на радость!</div>
+                </div>
+                <a class="index-button index-slider__btn" href="#">Открыть каталог</a>
               </div>
-              <a class="index-button" href="#">Открыть каталог</a>
             </div>
           </div>
           <div class="index-slider__arrows">
