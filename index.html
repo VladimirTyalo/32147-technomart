@@ -201,14 +201,16 @@
 
           <div class="services-slider">
             <!-- TODO slider fuctionality add css rules and test -->
+            <input id="btn-1" type="radio" name="toggle" checked>
+            <input id="btn-2" type="radio" name="toggle">
+            <input id="btn-3" type="radio" name="toggle">
+
             <div class="services-slider__menu">
-              <input id="btn-1" type="radio" name="toggle" checked>
-              <input id="btn-2" type="radio" name="toggle">
-              <input id="btn-3" type="radio" name="toggle">
+
               <div class="services-slider__controls">
                 <label for="btn-1">Доставка</label>
                 <label for="btn-2">Гарантия</label>
-                <label for="btn-3">Кредит</label>
+                <label for="btn-3" >Кредит</label>
               </div>
             </div>
 
@@ -217,9 +219,9 @@
                 <div class="services-slider__slide">
                   <div class="slide__title">Доставка</div>
                   <p class="slide__text">
-                    Мы с удовольствием доставим ваш товар прямо
-                    к вашему подьезду слвершенно бесплатно!
-                    Ведь мы неплохо заработаем,
+                    Мы с удовольствием доставим ваш товар <br>
+                    прямо к вашему подьезду слвершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
                 </div>
@@ -245,46 +247,46 @@
       </section>
 
       <div class="delivery">
-      <div class="container">
+        <div class="container">
 
-        <div class="delivery-details">
-          <div class="delivery-details__title">
-            Компания "Техномарт"
+          <div class="delivery-details">
+            <div class="delivery-details__title">
+              Компания "Техномарт"
+            </div>
+            <p class="delivery-details__text">
+              Настоящтй мужской шоппинг здесь! Огромный выбор товаров для ремонта
+              и строительства не оставит равнодушными любителей сэкономить на
+              гастарбайтерах.
+            </p>
+            <p class="delivery-details__text">
+              Мы можем доставить ваш товар в самые отдаленные точки России!
+              Техномарт работает со многими транспортными компантями:
+            </p>
+            <ul class="delivery-details__companies">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="index-button index-button--delivery-details" href="#">Подробнее о компании</a>
           </div>
-          <p class="delivery-details__text">
-            Настоящтй мужской шоппинг здесь! Огромный выбор товаров для ремонта
-            и строительства не оставит равнодушными любителей сэкономить на
-            гастарбайтерах.
-          </p>
-          <p class="delivery-details__text">
-            Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компантями:
-          </p>
-          <ul class="delivery-details__companies">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+
+          <div class="delivery-map">
+            <div class="delivery-map__title">Контакты</div>
+            <div class="delivery-map__text">
+              Вы можете забрать товар сами, заехав в наш офис:
+            </div>
+            <div class="delivery-map__map-snippet">
+              <a class="delivery-map__map-area" href="#">
+                <img src="img/map.jpg" width="300" height="158" alt="addres on map">
+              </a>
+              <!-- 2 hidden images -->
+              <!-- <img src="img/map-hover-1.jpg" width="940" height="446" alt="ул. Большая Конюшенная 19">
+              <img src="img/map-hover-2.jpg" width="1200" height="777" alt="ул. Строительная 15"> -->
+            </div>
+            <a class="index-button" href="#">Заблудились? Напишите нам!</a>
+          </div>
+
         </div>
-
-        <div class="delivery-map">
-          <div class="delivery-map__title">Контакты</div>
-          <div class="delivery-map__text">
-            Вы можете забрать товар сами, заехав в наш офис:
-          </div>
-          <div class="delivery-map__map-snippet">
-            <a class="delivery-map__map-area" href="#">
-              <img src="img/map.jpg" width="300" height="158" alt="addres on map">
-            </a>
-            <!-- 2 hidden images -->
-            <!-- <img src="img/map-hover-1.jpg" width="940" height="446" alt="ул. Большая Конюшенная 19">
-            <img src="img/map-hover-2.jpg" width="1200" height="777" alt="ул. Строительная 15"> -->
-          </div>
-          <p class="index-button">Заблудились? Напишите нам!</p>
-        </div>
-
-      </div>
     </div>
   </main>
 
@@ -297,7 +299,7 @@
       <div class="footer-top">
         <div class="container">
 
-          <div class="logo">Техномарт</div>
+          <a class="logo logo--footer" href="#">Техномарт</a>
 
           <div class="footer-nav">  <!-- можно обойтись без div ? -->
             <ul>
@@ -343,13 +345,15 @@
         <div class="footer-feedback">
           <div class="footer-feedback__text">Обратная связь</div>
           <a class="footer-feedback__mail"  href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
+            mail&commat;htmlacademy.ru
           </a>
-        </div>
+        </div>.footer-hire-us
 
         <div class="footer-hire-us">
-          <div class="footer__text">Разрабатоно-</div>
-          <a href="http://www.htmlacademy.ru">htmlacademy.ru</a>
+          <div class="footer-hire-us__text">Разрабатоно-</div>
+          <a class="footer-hire-us__link"  href="mailto:mail@htmlacademy.ru">
+            htmlacademy.ru
+          </a>
         </div>
       </div>
     </div>
