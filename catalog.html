@@ -87,23 +87,23 @@
 
 
           <div class="filter-column">
-            <div class="filter-column__title">Фильтр</div>
+            <div class="filter-column__title">Фильтр:</div>
 
             <form class="form"  id="form" action="#" method="get">
             <!-- TODO  price-range -->
             <div class="price-range">
-              <div class="price-range__title">Цена</div>
+              <div class="price-range__title">Цена:</div>
               <div class="price-range__scroll-box">
                 <input id="price-min" type="range" name="price-min" min="0">
                 <input id="price-max" type="range" name="price-max" max="50000">
               </div>
               <output class="price-range__min" name="min" for="price-min">0</output>
-              <div class="price-range__min-max">-</div>     <!-- ????? output:after -->
+              <div class="price-range__min-max">&mdash;</div>     <!-- ????? output:after -->
               <output class="price-range__max" name="max" for="price-max">30000</output>
             </div>
 
             <div class="filter-options">
-              <div class="filter-options__title">Производители</div>
+              <div class="filter-options__title">Производители:</div>
               <input id="bosch" type="checkbox" checked>
               <label for="bosch">Bosch</label>
               <input id="interskol" type="checkbox">
@@ -124,14 +124,14 @@
               <label for="cable">Сетевые</label>
             </div>
 
-            <button class="form__button" type="submit" form="form">Показать</button>
+            <a class="form__button" type="submit" form="form">Показать</a>
 
           </form>
           </div>
 
           <div class="preview-column">
             <div class="sort-menu">
-              <div class="sort-menu__title">Сортировка</div>
+              <div class="sort-menu__title">Сортировка:</div>
               <a class="sort-menu__item" href="#">По цене</a>
               <a class="sort-menu__item" href="#">По типу</a>
               <a class="sort-menu__item" href="#">По функционалу</a>
@@ -142,22 +142,20 @@
             <div class="posters-container">
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
                 <div class="product-post__old-price">22500 Р.</div>
-                <div class="product-post__btn">15500 Р.</div>
+                <a class="product-post__btn">15500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
                 <div class="product-post__old-price">30500 Р.</div>
-                <div class="product-post__btn">25500 Р.</div>
+                <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
@@ -165,77 +163,70 @@
               </article>
 
               <article class="product-post product-post--new">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
                 <div class="product-post__old-price"></div>
-                <div class="product-post__btn">12500 Р.</div>
+                <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
                 <div class="product-post__old-price">22500 Р.</div>
-                <div class="product-post__btn">15500 Р.</div>
+                <a class="product-post__btn">15500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post product-post--new">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
                 <div class="product-post__old-price">30500 Р.</div>
-                <div class="product-post__btn">25500 Р.</div>
+                <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
                 <div class="product-post__old-price"></div>
-                <div class="product-post__btn">12500 Р.</div>
+                <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
                 <div class="product-post__old-price">22500 Р.</div>
-                <div class="product-post__btn">15500 Р.</div>
+                <a class="product-post__btn">15500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
                 <div class="product-post__old-price">30500 Р.</div>
-                <div class="product-post__btn">25500 Р.</div>
+                <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
               </article>
 
               <article class="product-post">
-                <!-- TODO размеры картинок после вебинара по фотошоп -->
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
                 <div class="product-post__old-price"></div>
-                <div class="product-post__btn">12500 Р.</div>
+                <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
                 <a class="product-post__button-bookmark" href="#">В закладки</a>
