@@ -117,7 +117,7 @@ h2 {
 
   color: #ffffff;
 
-  vertical-align: center;
+  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -141,7 +141,6 @@ h2 {
 .header-contacts {
   width: 300px;
 }
-
 
 .promo-block {
   padding-top: 48px;
@@ -460,18 +459,9 @@ h2 {
   transform: translateX(-620px);
 }
 
+
 /* pupular */
-.tools {
-  float: left;
-
-  width: 100%;
-}
-
 .popular-items {
-  float: left;
-
-  width: 940px;
-
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -492,7 +482,6 @@ h2 {
 }
 
 .index-button--popular-items {
-  display: inline-block;
   float: right;
 
   width: 254px;
@@ -504,10 +493,8 @@ h2 {
   vertical-align: middle;
 }
 
-.tools-content-wrapper {
-  float: left;
-
-  width: 940px;
+.tools__content-wrapper,
+.brands__content-wrapper {
   margin-top: 22px;
 
   font-size: 0;
@@ -593,9 +580,6 @@ h2 {
 
 .sort-menu__arrow {
   width: 40px;
-  /* temp */
-
-  content: "ar";
 }
 
 .product-post:last-of-type {
@@ -609,9 +593,6 @@ h2 {
 }
 
 .brands {
-  float: left;
-
-  width: 940px;
   margin-bottom: 86px;
 }
 
@@ -822,7 +803,6 @@ h2 {
 }
 
 /* padding */
-
 .footer-top {
   background: #32425c;
 }
@@ -1182,12 +1162,10 @@ h2 {
   line-height: 18px;
 
   border: 1px solid #e5e5e5;
+  background: #ffffff;
 
   text-transform: uppercase;
 }
-
-
-
 
 
 .preview-column {
@@ -1204,7 +1182,6 @@ h2 {
 
   background: #f7f3ec;
 }
-
 
 [class^="sort-menu__"] {
   display: inline-block;
@@ -1228,25 +1205,56 @@ h2 {
 
 .paginator {
   margin-bottom: 60px;
+  padding-left: 0;
+  font-size: 0px;
 }
 
 [class^="paginator__"] {
   display: inline-block;
 
+
+  margin-right: 10px;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+
   vertical-align: middle;
+}
+
+[class^="paginator__"] a,
+[class^="paginator__"] span {
+  color: #000000;
+
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.paginator__btn--active {
+  background: #ee3643;
+  border: none;
+}
 
+.paginator__btn--active span {
+  color: #ffffff;
+}
+
+.paginator__next {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 .product-use {
   background: #f2f6f8;
 }
+
 
 .product-use__title {
   padding-top: 60px;
