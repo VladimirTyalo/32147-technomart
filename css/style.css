@@ -39,6 +39,11 @@ h2 {
   color: #32425c;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -410,6 +415,9 @@ h2 {
   background: #ee3643;
 
   text-decoration: none;
+
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .index-slider__title {
@@ -541,7 +549,7 @@ h2 {
   text-decoration: line-through;
 }
 
-.product-post__old-price:empty ~ .product-post__btn {
+.product-post__text + .product-post__btn {
   margin-top: 40px;
 }
 
@@ -607,6 +615,7 @@ h2 {
 
 .brand-logo img {
   border: 1px solid #e5e5e5;
+  display: block;
 }
 
 .brand-logo:nth-of-type(4n) {
@@ -752,7 +761,7 @@ h2 {
   display: inline-block;
 
   margin-bottom: 86px;
-  padding-top: 74px;
+  margin-top: 74px;
 
   vertical-align: top;
 }
@@ -761,8 +770,8 @@ h2 {
   width: 540px;
 }
 .delivery-map {
-  width: 400px;
-  padding-left: 100px;
+  width: 300px;
+  margin-left: 100px;
 }
 
 .delivery-details__title,
@@ -774,6 +783,10 @@ h2 {
   line-height: 24px;
 
   color: #000000;
+}
+
+.delivery-map__map-snippet {
+  margin-bottom: 40px;
 }
 
 .delivery-details__text,
@@ -788,8 +801,10 @@ h2 {
   color: #000000;
 }
 
+
+
 .delivery-details__companies li {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
@@ -798,8 +813,17 @@ h2 {
   color: #000000;
 }
 
+.delivery-details__companies {
+  margin-bottom: 40px;
+}
+
 .index-button--delivery-details {
   padding-right: 45px;
+}
+
+.index-button--delivery-map {
+  padding-right: 45px;
+  width: 100%;
 }
 
 /* padding */
@@ -1064,9 +1088,6 @@ h2 {
   right: 40px;
 }
 
-.price-range__scroll-box input {
-  display: none;
-}
 
 .price-range__min,
 .price-range__max {
@@ -1081,6 +1102,7 @@ h2 {
   line-height: 18px;
 
   background: #f7f3ec;
+  border: none;
 
   text-align: center;
   vertical-align: top;
@@ -1206,12 +1228,12 @@ h2 {
 .paginator {
   margin-bottom: 60px;
   padding-left: 0;
-  font-size: 0px;
+
+  font-size: 0;
 }
 
 [class^="paginator__"] {
   display: inline-block;
-
 
   margin-right: 10px;
   padding-top: 9px;
@@ -1238,8 +1260,8 @@ h2 {
 }
 
 .paginator__btn--active {
-  background: #ee3643;
   border: none;
+  background: #ee3643;
 }
 
 .paginator__btn--active span {
@@ -1247,8 +1269,8 @@ h2 {
 }
 
 .paginator__next {
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 }
 
 .product-use {

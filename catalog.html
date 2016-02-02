@@ -86,20 +86,16 @@
 
 
 
-          <div class="filter-column">
-            <div class="filter-column__title">Фильтр:</div>
+        <div class="filter-column">
+          <div class="filter-column__title">Фильтр:</div>
 
-            <form class="form"  id="form" action="#" method="get">
-            <!-- TODO  price-range -->
+          <form class="form"  id="form" action="#" method="get">
             <div class="price-range">
               <div class="price-range__title">Цена:</div>
-              <div class="price-range__scroll-box">
-                <input id="price-min" type="range" name="price-min" min="0">
-                <input id="price-max" type="range" name="price-max" max="50000">
-              </div>
-              <output class="price-range__min" name="min" for="price-min">0</output>
-              <div class="price-range__min-max">&mdash;</div>     <!-- ????? output:after -->
-              <output class="price-range__max" name="max" for="price-max">30000</output>
+              <div class="price-range__scroll-box"></div>
+              <input class="price-range__min" id="price-min" name="price-min" for="price-min" min="0" value="0">
+              <div class="price-range__min-max">&mdash;</div>
+              <input class="price-range__max" id="price-max" name="price-max" for="price-max" max="5000" value="30000">
             </div>
 
             <div class="filter-options">
@@ -127,7 +123,7 @@
             <button class="form__button" type="submit" form="form">Показать</button>
 
           </form>
-          </div>
+        </div>
 
           <div class="preview-column">
             <div class="sort-menu">
@@ -165,7 +161,7 @@
               <article class="product-post product-post--new">
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
-                <div class="product-post__old-price"></div>
+                <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
@@ -195,7 +191,7 @@
               <article class="product-post">
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
-                <div class="product-post__old-price"></div>
+                <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
@@ -225,7 +221,7 @@
               <article class="product-post">
                 <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
-                <div class="product-post__old-price"></div>
+                <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
                 <a class="product-post__button-by" href="#">Купить</a>
@@ -264,8 +260,6 @@
 
 
   <footer class="main-footer">
-
-
       <div class="footer-top">
         <div class="container">
 
@@ -286,7 +280,7 @@
             +7 (812) 555-05-55
           </div>
 
-          <div class="services-nav">  <!-- можно обойтись без div ? -->
+          <div class="services-nav">
             <ul>
               <li class="services-nav__item"><a href="#">Материалы</a></li>
               <li class="services-nav__item"><a href="#">Техника</a></li>
