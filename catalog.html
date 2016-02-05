@@ -2,9 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" type="text/css" rel="stylesheet">
-   <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" type="text/css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/icons.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <title>Техномарт | Каталог</title>
 </head>
 <body>
@@ -13,9 +17,9 @@
     <div class="top-header">
       <div class="container">
         <a class="logo" href="index.html">Техномарт</a>
+
         <form class="top-header__search" action="#" method="get" name="search-form">
-          <label class="top-header__search-label" for="search">Поиск:</label>
-          <input class="top-header__search-input" id="search" type="search" name="search">
+           <input class="top-header__search-input" id="search" type="search" name="search" placeholder="Поиск:">
         </form>
         <div class="top-header__bookmarks">
           <a class="top-header__bookmark-link" href="#">Закладки</a>
@@ -91,11 +95,13 @@
             <div class="price-range">
               <div class="price-range__title">Цена:</div>
               <div class="price-range__scroll-box"></div>
-              <label class="price-range__min">0
+              <label class="price-range__min">
+                0
                 <input  type="range" id="price-min" name="price-min" min="0" value="0">
               </label>
               <div class="price-range__min-max">&mdash;</div>
-              <label class="price-range__max">30000
+              <label class="price-range__max">
+                30000
                 <input  type="range" id="price-max" name="price-max" max="5000" value="30000">
               </label>
             </div>
