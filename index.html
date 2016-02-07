@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <title>Техномарт | Home</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="css/icons.css"/>
+
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
-<body>
-
+<body class="index">
   <header class="main-header">
 
     <div class="top-header">
@@ -22,11 +21,9 @@
         </form>
         <div class="top-header__bookmarks">
           <a class="top-header__bookmark-link" href="#">Закладки:</a>
-          <i class="top-header__bookmarks-amount">0</i>
         </div>
         <div class="top-header__cart">
           <a class="top-header__cart-name" href="#">Корзина:</a>
-          <i class="top-header__items">0</i>
         </div>
         <a class="top-header__order" href="#">Оформить заказ</a>
       </div>
@@ -79,12 +76,12 @@
     <div class="container">
       <!-- make all articles float left (4-th is slider) -->
       <div class="facilities">
-        <div class="facility-item">
+        <div class="facility-item facility-item--new">
           <div class="facility-item__name">Мастерская</div>
           <a class="facility-item__button">На любой вкус</a>
         </div>
 
-        <div class="facility-item">
+        <div class="facility-item ">
           <div class="facility-item__name">Инструмент</div>
           <a class="facility-item__button">На все случаи</a>
         </div>
@@ -109,7 +106,7 @@
                   <div class="index-slider__title">Перфораторы</div>
                   <div class="index-slider__caption">Настоящие мужские игрушки</div>
                 </div>
-                <a class="index-button index-button--slider" href="#">Открыть каталог</a>
+                <a class="index-button index-button--slider" href="catalog.html">Открыть каталог</a>
               </div>
               <div class="index-slider__slide">
                 <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
@@ -117,7 +114,7 @@
                   <div class="index-slider__title">Дрели</div>
                   <div class="index-slider__caption">Соседям на радость!</div>
                 </div>
-                <a class="index-button index-button--slider" href="#">Открыть каталог</a>
+                <a class="index-button index-button--slider" href="catalog.html">Открыть каталог</a>
               </div>
             </div>
           </div>
@@ -149,23 +146,44 @@
             <div class="product-post__text">Перфоратор BOSCH BFG 9000</div>
             <div class="product-post__old-price">32500 Р.</div>
             <a class="product-post__btn" href="#">25500 Р.</a>
+            <!-- 2 hovered buttons -->
+            <div class="product-post__btns">
+              <a class="index-button product-post__button-by" href="#">Купить</a>
+              <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+            </div>
           </article>
           <article class="product-post">
             <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="144" height="128">
             <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
             <div class="product-post__old-price">22500 Р.</div>
             <a class="product-post__btn" href="#">15500 Р.</a>
+            <!-- 2 hovered buttons -->
+            <div class="product-post__btns">
+              <a class="index-button product-post__button-by" href="#">Купить</a>
+              <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+            </div>
           </article>
           <article class="product-post">
-            <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="144" height="128">
+            <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="127" height="112">
             <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
             <div class="product-post__old-price">30500 Р.</div>
-            <a class="product-post__btn" href="#">25500 Р.</a>
+            <a class="product-post__btn">25500 Р.</a>
+            <!-- 2 hovered buttons -->
+            <div class="product-post__btns">
+              <a class="index-button product-post__button-by" href="#">Купить</a>
+              <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+            </div>
           </article>
           <article class="product-post product-post--new">
-            <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="144" height="128">
+            <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
             <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
-            <a class="product-post__btn" href="#">12500 Р.</a>
+            <!-- <div class="product-post__old-price"></div> -->
+            <a class="product-post__btn">12500 Р.</a>
+            <!-- 2 hovered buttons -->
+            <div class="product-post__btns">
+              <a class="index-button product-post__button-by" href="#">Купить</a>
+              <a class="index-button index-button product-post__button-bookmark" href="#">В закладки</a>
+            </div>
           </article>
         </div>
       </section>
@@ -225,17 +243,18 @@
                 <div class="services-slider__slide">
                   <div class="slide__title">Гарантия</div>
                   <p class="slide__text">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Enim, dolore!
+                    Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
                   </p>
                 </div>
                 <div class="services-slider__slide">
                   <div class="slide__title">Кредит</div>
                   <p class="slide__text">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Debitis ducimus maxime
-                    libero officia voluptatum qui aspernatur
+                   Залезть в долговую яму стало проще!
+                   Кредитные консультанты придут вам на помощь.
                   </p>
+                  <a href="" class="index-button">Отправить заявку</a>
                 </div>
               </div>
             </div>
@@ -260,7 +279,7 @@
               Техномарт работает со многими транспортными компантями:
             </p>
             <ul class="delivery-details__companies">
-              <li>Деловые линии</li>
+              <li>Деловые линии </li>
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>

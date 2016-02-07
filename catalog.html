@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="css/icons.css"/>
+ <!--  <link rel="stylesheet" type="text/css" href="css/icons.css"/> -->
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <title>Техномарт | Каталог</title>
 </head>
-<body>
+<body class="catalog">
   <header class="main-header">
 
     <div class="top-header">
@@ -22,12 +22,12 @@
            <input class="top-header__search-input" id="search" type="search" name="search" placeholder="Поиск:">
         </form>
         <div class="top-header__bookmarks">
-          <a class="top-header__bookmark-link" href="#">Закладки</a>
-          <i class="top-header__bookmarks-amount">0</i>
+          <a class="top-header__bookmark-link" href="#">Закладки:</a>
+
         </div>
         <div class="top-header__cart">
-          <a class="top-header__cart-name" href="#">Корзина</a>
-          <i class="top-header__items">10</i>
+          <a class="top-header__cart-name" href="#">Корзина:</a>
+
         </div>
         <a class="top-header__order" href="#">Оформить заказ</a>
       </div>
@@ -80,7 +80,7 @@
     <div class="container">
 
         <ul class="breadcrumb">
-          <li class="breadcrumb__item"><a href="#"></a></li>
+          <li class="breadcrumb__item"><a href="index.html"></a></li>
           <li class="breadcrumb__item"><a href="#">Каталог</a></li>
           <li class="breadcrumb__item"><a href="#">Инструменты</a></li>
           <li class="breadcrumb__item"><span>Перфораторы</span></li>
@@ -106,7 +106,7 @@
               </label>
             </div>
 
-            <div class="filter-options">
+            <div class="filter-options filter-options--checkbox">
               <div class="filter-options__title">Производители:</div>
               <input id="bosch" type="checkbox" checked>
               <label for="bosch">Bosch</label>
@@ -116,15 +116,15 @@
               <label for="makita">Makita</label>
               <input id="dewalt" type="checkbox">
               <label for="dewalt">DeWalt</label>
-              <input id="hitachi" type="checkbox">
+              <input id="hitachi" type="checkbox" disabled >
               <label for="hitachi">Hitachi</label>
             </div>
 
-            <div class="filter-options">
+            <div class="filter-options filter-options--radio">
               <div class="filter-options__title">Питание</div>
               <input id="accum" type="radio" checked name="supply" value="accum">
               <label for="accum">Аккумуляторные</label>
-              <input id="cable" type="radio" name="supply" value="cable">
+              <input id="cable" type="radio" name="supply" value="cable" disabled checked>
               <label for="cable">Сетевые</label>
             </div>
 
@@ -140,19 +140,21 @@
               <a class="sort-menu__item" href="#">По типу</a>
               <a class="sort-menu__item" href="#">По функционалу</a>
               <a class="sort-menu__arrow" href="#"></a>
-              <a class="sort-menu__arrow" href="#"></a>
+              <a class="sort-menu__arrow sort-menu__arrow--down" href="#"></a>
             </div>
 
             <div class="posters-container">
 
-              <article class="product-post">
-                <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="127" height="112">
+               <article class="product-post">
+                <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="144" height="128">
                 <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
                 <div class="product-post__old-price">22500 Р.</div>
-                <a class="product-post__btn">15500 Р.</a>
+                <a class="product-post__btn" href="#">15500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post">
@@ -161,8 +163,10 @@
                 <div class="product-post__old-price">30500 Р.</div>
                 <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
 
               </article>
 
@@ -172,8 +176,10 @@
                 <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post">
@@ -182,8 +188,10 @@
                 <div class="product-post__old-price">22500 Р.</div>
                 <a class="product-post__btn">15500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post product-post--new">
@@ -192,8 +200,10 @@
                 <div class="product-post__old-price">30500 Р.</div>
                 <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post">
@@ -202,18 +212,22 @@
                 <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
-              <article class="product-post">
+              <article class="product-post product-post--new">
                 <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="127" height="112">
                 <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
                 <div class="product-post__old-price">22500 Р.</div>
                 <a class="product-post__btn">15500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post">
@@ -222,8 +236,10 @@
                 <div class="product-post__old-price">30500 Р.</div>
                 <a class="product-post__btn">25500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
 
               <article class="product-post">
@@ -232,8 +248,10 @@
                 <!-- <div class="product-post__old-price"></div> -->
                 <a class="product-post__btn">12500 Р.</a>
                 <!-- 2 hovered buttons -->
-                <a class="product-post__button-by" href="#">Купить</a>
-                <a class="product-post__button-bookmark" href="#">В закладки</a>
+                <div class="product-post__btns">
+                  <a class="index-button product-post__button-by" href="#">Купить</a>
+                  <a class="index-button product-post__button-bookmark" href="#">В закладки</a>
+                </div>
               </article>
             </div>
 
@@ -328,6 +346,19 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="cart-notification">
+    <div class="cart-notification__title">Товар добавлен в корзину!</div>
+    <div class="cart-notification__choice">
+      <a class="cart-notification__btn cart-notification__btn--order" href="#">
+        Оформить заказ
+      </a>
+      <a class="cart-notification__btn cart-notification__btn--continue" href="catalog.html">
+        Продолжить покупки
+      </a>
+    </div>
+  </div>
 
 
 </body>
