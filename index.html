@@ -292,7 +292,7 @@
               Вы можете забрать товар сами, заехав в наш офис:
             </div>
             <div class="delivery-map__map-snippet">
-              <a class="delivery-map__map-area" href="#">
+              <a class="delivery-map__map-area" href="https://www.google.ru/maps">
                 <img src="img/map.jpg" width="300" height="158" alt="addres on map">
               </a>
               <!-- 2 hidden images -->
@@ -374,5 +374,31 @@
       </div>
     </div>
   </footer>
+
+
+  <form class="feedback-form" id="feedback-form" action="#" mehtod="post">
+      <div class="feedback-form__header">
+        <div class="feedback-form__half-width">
+          <label  class="fedback-form__name" for="feedback-form__name" >Ваше имя:</label>
+          <input id="feedback-form__name" type="text" name="feedback-form__name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="feedback-form__half-width">
+          <label  class="feedback-form__mail" for="feedback-form__mail">Ваш e-mail:</label>
+          <input id="feedback-form__mail" type="text" name="feedback-form__mail" placeholder="Для отправки ответа">
+        </div>
+
+        <label  class="feedback-form__text" for="feedback-form__text" name="feedback-form__text">
+          Текст письма:
+        </label>
+        <textarea id="feedback-form__text" rows="5">В свободной форме</textarea>
+      </div>
+      <div class="feedback-form__footer">
+        <button class="index-button index-button--feedback-form" for="feedback-form" type="submit">
+          Отправить
+        </button>
+      </div>
+
+  </form>
+
 </body>
 </html>

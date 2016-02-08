@@ -93,38 +93,36 @@
 
           <form class="form"  id="form" action="#" method="get">
             <div class="price-range">
-              <div class="price-range__title">Цена:</div>
+              <legend class="price-range__title">Цена:</legend>
               <div class="price-range__scroll-box"></div>
-              <label class="price-range__min">
-                0
-                <input  type="range" id="price-min" name="price-min" min="0" value="0">
-              </label>
+
+                <input  class="price-range__min" type="text" id="price-min" name="price-min" value="0">
+
               <div class="price-range__min-max">&mdash;</div>
-              <label class="price-range__max">
-                30000
-                <input  type="range" id="price-max" name="price-max" max="5000" value="30000">
-              </label>
+
+                <input  class="price-range__max" type="text" id="price-max"  value="30000">
+
             </div>
 
             <div class="filter-options filter-options--checkbox">
-              <div class="filter-options__title">Производители:</div>
-              <input id="bosch" type="checkbox" checked>
+              <legend class="filter-options__title">Производители:</legend>
+              <input id="bosch" type="checkbox" name="bosch" checked>
               <label for="bosch">Bosch</label>
-              <input id="interskol" type="checkbox">
+              <input id="interskol" type="checkbox" name="interskol">
               <label for="interskol">Интерскол</label>
-              <input id="makita" type="checkbox" checked>
+              <input id="makita" type="checkbox" checked name="makita">
               <label for="makita">Makita</label>
-              <input id="dewalt" type="checkbox">
+              <input id="dewalt" type="checkbox" name="dewalt">
               <label for="dewalt">DeWalt</label>
-              <input id="hitachi" type="checkbox" disabled >
+              <input id="hitachi" type="checkbox" name="hitachi">
               <label for="hitachi">Hitachi</label>
             </div>
 
             <div class="filter-options filter-options--radio">
-              <div class="filter-options__title">Питание</div>
+              <legend class="filter-options__title">Питание</legend>
               <input id="accum" type="radio" checked name="supply" value="accum">
               <label for="accum">Аккумуляторные</label>
-              <input id="cable" type="radio" name="supply" value="cable" disabled checked>
+              <input id="cable" type="radio" name="supply" value="cable" checked>
               <label for="cable">Сетевые</label>
             </div>
 
