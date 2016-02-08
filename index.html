@@ -78,17 +78,17 @@
       <div class="facilities">
         <div class="facility-item facility-item--new">
           <div class="facility-item__name">Мастерская</div>
-          <a class="facility-item__button">На любой вкус</a>
+          <a class="facility-item__button" href="#">На любой вкус</a>
         </div>
 
         <div class="facility-item ">
           <div class="facility-item__name">Инструмент</div>
-          <a class="facility-item__button">На все случаи</a>
+          <a class="facility-item__button" href="#">На все случаи</a>
         </div>
 
         <div class="facility-item">
           <div class="facility-item__name">Техника</div>
-          <a class="facility-item__button">Для стройки</a>
+          <a class="facility-item__button" href="#">Для стройки</a>
         </div>
 
         <div class="index-slider">
@@ -126,12 +126,12 @@
 
         <div class="facility-item">
           <div class="facility-item__name">Скидки 50%</div>
-          <a class="facility-item__button">на 350 товаров</a>
+          <a class="facility-item__button" href="#">на 350 товаров</a>
         </div>
 
         <div class="facility-item">
           <div class="facility-item__name">Доставка</div>
-          <a class="facility-item__button">Бесплатно</a>
+          <a class="facility-item__button" href="#">Бесплатно</a>
         </div>
       </div> <!-- features -->
 
@@ -310,8 +310,6 @@
 
 
   <footer class="main-footer">
-
-
       <div class="footer-top">
         <div class="container">
 
@@ -376,7 +374,7 @@
   </footer>
 
 
-  <form class="feedback-form" id="feedback-form" action="#" mehtod="post">
+  <form class="feedback-form" id="feedback-form" action="#" method="post">
       <div class="feedback-form__header">
         <div class="feedback-form__half-width">
           <label  class="fedback-form__name" for="feedback-form__name" >Ваше имя:</label>
@@ -387,13 +385,13 @@
           <input id="feedback-form__mail" type="text" name="feedback-form__mail" placeholder="Для отправки ответа">
         </div>
 
-        <label  class="feedback-form__text" for="feedback-form__text" name="feedback-form__text">
+        <label  class="feedback-form__text" for="feedback-form__text">
           Текст письма:
         </label>
-        <textarea id="feedback-form__text" rows="5">В свободной форме</textarea>
+        <textarea id="feedback-form__text" rows="5"  name="feedback-form__text">В свободной форме</textarea>
       </div>
       <div class="feedback-form__footer">
-        <button class="index-button index-button--feedback-form" for="feedback-form" type="submit">
+        <button class="index-button index-button--feedback-form" form="feedback-form" type="submit">
           Отправить
         </button>
       </div>
