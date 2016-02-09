@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт | Home</title>
+
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body class="index">
   <header class="main-header">
@@ -17,13 +16,19 @@
       <div class="container"> <!-- ?? -->
         <div class="logo">Техномарт</div>
         <form class="top-header__search" action="#" method="get" name="search-form">
-          <input class="top-header__search-input" id="search" type="search" name="search" placeholder="Поиск:">
+          <div class="Top-header__input-wrapper">
+            <input class="top-header__search-input" id="search" type="search" name="search" placeholder="Поиск:">
+          </div>
         </form>
         <div class="top-header__bookmarks">
-          <a class="top-header__bookmark-link" href="#">Закладки:</a>
+          <a class="top-header__bookmark-link" href="#">
+            Закладки: <i class="top-header__amount">0</i>
+          </a>
         </div>
         <div class="top-header__cart">
-          <a class="top-header__cart-name" href="#">Корзина:</a>
+          <a class="top-header__cart-name" href="#">
+            Корзина:<i class="top-header__amount">0</i>
+          </a>
         </div>
         <a class="top-header__order" href="#">Оформить заказ</a>
       </div>
@@ -33,7 +38,7 @@
       <div class="container">
 
           <div class="promo-block">
-            Интернет-магазин<br>
+            Интернет-магазин
             строительных материалов<br>
             и инструментов для ремонта
           </div>
@@ -43,7 +48,7 @@
               +7 (812) 555-05-55
             </a>
             <div class="header-contacts__adress">
-              г. Санкт-Петербург, ул. Б. Конюшенская, д. 19/8
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </div>
           </div>
 
@@ -77,7 +82,7 @@
       <!-- make all articles float left (4-th is slider) -->
       <div class="facilities">
         <div class="facility-item facility-item--new">
-          <div class="facility-item__name">Мастерская</div>
+          <div class="facility-item__name">Материалы</div>
           <a class="facility-item__button" href="#">На любой вкус</a>
         </div>
 
@@ -104,7 +109,7 @@
                 <img src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
                 <div class="index-slider__text">
                   <div class="index-slider__title">Перфораторы</div>
-                  <div class="index-slider__caption">Настоящие мужские игрушки</div>
+                  <div class="index-slider__caption">Настроящие мужские игрушки</div>
                 </div>
                 <a class="index-button index-button--slider" href="catalog.html">Открыть каталог</a>
               </div>
@@ -138,11 +143,11 @@
       <section class="tools">
         <div class="popular-items">
           <h2 class="popular-items__text">Популярные товары:</h2>
-          <a class="index-button index-button--popular-items" href="#">Все популярные товары</a>
+          <a class="index-button index-button--popular-items" href="#">Все попуряные товары</a>
         </div>
         <div class="tools__content-wrapper">
           <article class="product-post">
-            <img class="product-post__img" src="img/bfg-9000.jpg" alt="BOSCH BFG 9000" width="144" height="128">
+            <img class="product-post__img" src="img/bfg-9000.jpg" alt="BOSCH BFG 9000" width="216" height="168">
             <div class="product-post__text">Перфоратор BOSCH BFG 9000</div>
             <div class="product-post__old-price">32500 Р.</div>
             <a class="product-post__btn" href="#">25500 Р.</a>
@@ -153,7 +158,7 @@
             </div>
           </article>
           <article class="product-post">
-            <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="144" height="128">
+            <img class="product-post__img" src="img/bfg-3000.jpg" alt="BOSCH BFG 3000" width="216" height="168">
             <div class="product-post__text">Перфоратор BOSCH BFG 3000</div>
             <div class="product-post__old-price">22500 Р.</div>
             <a class="product-post__btn" href="#">15500 Р.</a>
@@ -164,7 +169,7 @@
             </div>
           </article>
           <article class="product-post">
-            <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="127" height="112">
+            <img class="product-post__img" src="img/bfg-6000.jpg" alt="BOSCH BFG 6000" width="216" height="168">
             <div class="product-post__text">Перфоратор BOSCH BFG 6000</div>
             <div class="product-post__old-price">30500 Р.</div>
             <a class="product-post__btn">25500 Р.</a>
@@ -175,7 +180,7 @@
             </div>
           </article>
           <article class="product-post product-post--new">
-            <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000" width="127" height="112">
+            <img class="product-post__img" src="img/bfg-2000.jpg" alt="BOSCH BFG 2000"  width="216" height="168">
             <div class="product-post__text">Перфоратор BOSCH BFG 2000</div>
             <!-- <div class="product-post__old-price"></div> -->
             <a class="product-post__btn">12500 Р.</a>
@@ -191,7 +196,7 @@
       <section class="brands">
         <div class="popular-items">
           <h2 class="popular-items__text">Популярные производители:</h2>
-          <a class="index-button index-button--popular-items" href="#">Все производители</a>
+          <a class="index-button index-button--popular-items" href="#">все производители</a>
         </div>
         <div class="brands__content-wrapper">
           <a class="brand-logo" href="#"><img src="img/bosch.jpg" width="220" height="145" alt="Bosch"></a>
