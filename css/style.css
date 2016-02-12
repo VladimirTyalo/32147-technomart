@@ -773,6 +773,13 @@ ul {
   float: left;
 }
 
+.index-slider__slide img {
+  display: block;
+  width: 620px;
+  height: 266px;
+  background: #32425c;
+}
+
 .index-slider__slides {
   width: 200%;
 }
@@ -1009,6 +1016,10 @@ ul {
 .product-post__img {
   overflow: hidden;
   margin-bottom: 1px;
+  display: block;
+  width: 218px;
+  height: 169px;
+
 }
 
 .product-post:hover > .product-post__img {
@@ -1021,7 +1032,7 @@ ul {
 }
 
 .product-post__text {
-  margin: -3px 25px 0 25px;
+  margin: 10px 25px 0 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
