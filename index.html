@@ -297,12 +297,14 @@
               Вы можете забрать товар сами,<br> заехав в наш офис:
             </div>
             <div class="delivery-map__map-snippet">
-              <a class="delivery-map__map-area" href="https://www.google.ru/maps">
+              <a class="delivery-map__map-area" href="#">
                 <img src="img/map.jpg" width="300" height="158" alt="addres on map">
               </a>
-              <!-- 2 hidden images -->
-              <!-- <img src="img/map-hover-1.jpg" width="940" height="446" alt="ул. Большая Конюшенная 19">
-              <img src="img/map-hover-2.jpg" width="1200" height="777" alt="ул. Строительная 15"> -->
+
+              <div class="modal-content-map">
+               <button class="icon-close" type="button"></button>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123857!2d30.32089461592147!3d59.93879686904809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455480569533" width="970" height="476" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div>
             </div>
             <a class="index-button index-button--delivery-map" href="#">Заблудились? Напишите нам!</a>
           </div>
@@ -383,7 +385,7 @@
       <button class="icon-close" type="button"></button>
       <div class="feedback-form__header">
         <div class="feedback-form__half-width">
-          <label  class="fedback-form__name" for="feedback-form__name" >Ваше имя:</label>
+          <label  class="feedback-form__name" for="feedback-form__name" >Ваше имя:</label>
           <input id="feedback-form__name" type="text" name="feedback-form__name" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="feedback-form__half-width">
@@ -401,8 +403,13 @@
           Отправить
         </button>
       </div>
-
   </form>
+
+
+
+
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
