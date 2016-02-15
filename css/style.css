@@ -81,6 +81,10 @@ ul {
   text-transform: uppercase;
 }
 
+.index .top-header .logo {
+  cursor: default;
+}
+
 .logo--footer {
   content: "";
   display: block;
@@ -629,7 +633,7 @@ ul {
   content: "";
   position: absolute;
   z-index: 55;
-  top: 0;
+  top: 1px;
   right: 0;
   width: 60px;
   height: 59px;
@@ -1095,7 +1099,7 @@ ul {
   position: relative;
   width: 135px;
   margin-bottom: 7px;
-  padding: 9px 0 9px 0;
+  padding: 11px 0 7px 0;
   border-bottom: 3px solid #367315;
   color: #ffffff;
   background: #63a63e;
@@ -1124,7 +1128,7 @@ ul {
 .product-post__button-bookmark {
   position: relative;
   width: 135px;
-  padding: 9px 0 9px 0;
+  padding: 8px 0 6px 0;
   border: 3px solid #63a63e;
   color: #000000;
   background: #ffffff;
@@ -1188,7 +1192,7 @@ ul {
 }
 
 .services__title {
-  padding-top: 67px;
+  padding-top: 64px;
   padding-left: 0;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
@@ -1789,6 +1793,7 @@ ul {
   height: 20px;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  outline: none;
   background: #ababab;
   box-shadow: 0 2px 0 #d4d1cb;
   cursor: pointer;
@@ -1886,8 +1891,8 @@ ul {
 }
 
 .filter-options--radio .filter-options__title {
-  margin-bottom: 15px;
-  padding-top: 0;
+  margin-bottom: 13px;
+  padding-top: 2px;
 }
 
 .filter-options input {
@@ -1959,7 +1964,7 @@ ul {
 .filter-options--radio input + label::before {
   content: "";
   position: absolute;
-  right: 0;
+  top: -2px;
   left: 0;
   width: 24px;
   height: 24px;
@@ -1975,7 +1980,7 @@ ul {
 .filter-options--radio input:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 7px;
   width: 9px;
   height: 9px;
@@ -2052,36 +2057,35 @@ ul {
 .sort-menu__arrow {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 2px;
   right: 49px;
-  width: 11px;
-  height: 10px;
-  background: url("./../img/sprite.png") no-repeat;
-  background-position: -64px -729px;
+  width: 10px;
+  height: 22px;
+  border-width: 0 5px 11px 5px;
+  /*background: url("./../img/sprite.png") no-repeat;
+  background-position: -64px -729px;*/
+  border-style: solid;
+  border-color: transparent transparent #c6c2bd  transparent;
 }
+
 .sort-menu__arrow--down {
   top: 14px;
   right: 17px;
-  background-position: -64px -413px;
+  transform: rotate(180deg);
+}
+
+.sort-menu__arrow--active {
+  border-color: transparent transparent #ee3643  transparent;
 }
 
 .sort-menu__arrow:hover {
-  background-position: -64px -709px;
-}
-
-
-.sort-menu__arrow--down:hover {
-  background-position: -64px -393px;
+  border-color: transparent transparent #000000  transparent;
 }
 
 .sort-menu__arrow:active {
-  background-position: -64px -749px;
+  border-color: transparent transparent #ee3643  transparent;
 }
 
-
-.sort-menu__arrow--down:active {
-  background-position: -59px -471px;
-}
 
 [class^="sort-menu__"] {
   display: inline-block;
@@ -2182,7 +2186,7 @@ ul {
 }
 
 .product-use__text {
-  padding-bottom: 55px;
+  padding-bottom: 56px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
