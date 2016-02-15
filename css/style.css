@@ -228,18 +228,22 @@ ul {
 }
 
 .top-header__amount {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
   font-style: normal;
+  line-height: 18px;
 }
 
 .top-header__bookmark-link .top-header__amount {
   position: absolute;
-  top: 10px;
+  bottom: 12px;
   left: 70px;
 }
 
 .top-header__cart-name .top-header__amount {
   position: absolute;
-  top: 10px;
+  bottom: 12px;
   left: 110px;
 }
 
@@ -519,8 +523,8 @@ ul {
   padding: 0;
   font-size: 0;
   background: #32425c;
-  text-align: center;
   box-shadow: inset 0 -5px 0 0 #293449;
+  text-align: center;
 }
 
 .main-nav__item {
@@ -543,9 +547,9 @@ ul {
   color: #ffffff;
   line-height: 17px;
   background: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 5px 0 0px #293449;
 }
 
 .main-nav__item:first-child a {
@@ -1069,7 +1073,7 @@ ul {
   width: 40px;
 }
 
-.product-post:last-of-type {
+.tools__content-wrapper .product-post:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1296,8 +1300,8 @@ ul {
   content: "";
   position: absolute;
   z-index: 10px;
+  top: 91px;
   right: 1px;
-  bottom: 2px;
   width: 468px;
   height: 261px;
   background: url("./../img/bg-sprite.png") no-repeat;
@@ -1389,9 +1393,24 @@ ul {
 
 .delivery-map__map-snippet {
   position: relative;
+  position: relative;
   margin-top: 30px;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
+
+
+.delivery-map__map-area {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 158px;
+}
+
+.delivery-map__map-frame {
+  transform: translate(-100px, 200px);
+}
+
 
 .delivery-details__text,
 .delivery-map__text {
@@ -1867,6 +1886,7 @@ ul {
 }
 
 .filter-options--radio .filter-options__title {
+  margin-bottom: 15px;
   padding-top: 0;
 }
 
@@ -1886,6 +1906,10 @@ ul {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.filter-options--radio label {
+  font-size: 14px;
 }
 
 .filter-options--checkbox input:checked + label::before {
@@ -1981,6 +2005,7 @@ ul {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  outline: none;
   background: #ffffff;
   text-transform: uppercase;
 }
@@ -2322,7 +2347,7 @@ ul {
   width: 28px;
   height: 28px;
   border: none;
-  background: #ffffff;
+  background: transparent;
 }
 
 .icon-close::before {
@@ -2348,7 +2373,6 @@ ul {
 }
 
 
-
 .feedback-form__half-width {
   width: 220px;
   margin-top: 46px;
@@ -2363,6 +2387,7 @@ ul {
 .feedback-form input,
 .feedback-form textarea {
   display: block;
+  outline: none;
 }
 
 .feedback-form__header {
@@ -2429,36 +2454,50 @@ ul {
 .index-button--feedback-form {
   display: inline-block;
   width: 460px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
-
-
-
 @-webkit-keyframes shake {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateX(-2%);
             transform: translateX(-2%);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateX(2%);
             transform: translateX(2%);
   }
 }
 @keyframes shake {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateX(-2%);
             transform: translateX(-2%);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateX(2%);
             transform: translateX(2%);
   }
@@ -2471,15 +2510,18 @@ ul {
           animation-duration: 100ms;
 }
 
-
 .modal-content-map {
-  display: none;
   position: absolute;
+  top: -178px;
+  right: 0;
+  display: none;
   width: 940px;
   height: 448px;
-  top: -178px;
-  right: 0px;
-  box-shadow: 0px 0px 16px 8px #c4c3c4;
+  box-shadow: 0 0 16px 8px #c4c3c4;
+}
+
+.modal-content-map iframe {
+  border: none;
 }
 
 .modal-content-show {

@@ -139,15 +139,11 @@ popUpFeedbackText.addEventListener("focus", function() {
       // localStorage.removeItem("storageText");
   });
 
-
-
-
 // map modal window //
 mapLink.addEventListener("click", function(event) {
    event.preventDefault();
    modalMap.classList.add("modal-content-show");
    popUpFeedbackForm.offsetHeight;
-   console.log("hello mapLink");
 });
 
 
@@ -156,7 +152,5 @@ mapClose.addEventListener("click", function(event) {
   event.preventDefault();
   modalMap.classList.remove("modal-content-show");
 })
-
-
 
 
