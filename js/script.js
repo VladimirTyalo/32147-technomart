@@ -102,6 +102,7 @@ popUpFeedbackForm.addEventListener("submit", function(event) {
     if (!popUpFeedbackName.value || !popUpFeedbackMail.value) {
       event.preventDefault();
       popUpFeedbackForm.classList.add("modal-error");
+      popUpFeedbackForm.offsetHeight;
       if(!popUpFeedbackName.value){
         popUpFeedbackName.style.background = "rgba(255,0,0,0.3)";
       }
