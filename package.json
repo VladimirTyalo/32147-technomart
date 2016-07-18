@@ -19,5 +19,6 @@
   "devDependencies": {
     "ejs": "^2.4.2",
     "express": "^4.14.0"
-  }
+  },
+  "start": "node index.js"
 }
