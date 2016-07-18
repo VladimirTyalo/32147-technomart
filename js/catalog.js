@@ -4,7 +4,6 @@ var cartNotification = document.querySelector(".cart-notification");
 var cartNotificationClose =  document.querySelector(".icon-close");
 var cartItemsAmount = document.querySelector(".top-header__cart .top-header__amount");
 
-console.log("Hellow world");
 
 for (var i = 0; i < buyButtons.length; i++) {
     buyButtons[i].addEventListener("click", function(event) {

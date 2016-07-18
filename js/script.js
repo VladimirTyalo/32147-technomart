@@ -75,7 +75,8 @@ cartNotificationClose.addEventListener("click", function(event) {
 // index write us modal window //
 btnWriteUs.addEventListener("click", function(event) {
     event.preventDefault();
-    popUpFeedbackForm.classList.add("modal-content-show");
+    // popUpFeedbackForm.classList.add("modal-content-show");
+    popUpFeedbackForm.classList.add("bounce");
     popUpFeedbackName.focus();
     if(storageName) {
       popUpFeedbackName.value = storageName;
@@ -91,6 +92,7 @@ btnWriteUs.addEventListener("click", function(event) {
 popUpFeedbackClose.addEventListener("click", function(event) {
     event.preventDefault();
     popUpFeedbackForm.classList.remove("modal-content-show");
+    popUpFeedbackForm.classList.remove("bounce");
     popUpFeedbackForm.classList.remove("modal-error");
   });
 
@@ -152,6 +154,6 @@ var mapClose = document.querySelector(".modal-content-map .icon-close");
 mapClose.addEventListener("click", function(event) {
   event.preventDefault();
   modalMap.classList.remove("modal-content-show");
-})
+});
 
 

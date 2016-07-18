@@ -1,9 +1,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -87,9 +85,7 @@ ul {
 .logo--footer {
   content: "";
   display: block;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 150px;
   padding-top: 16px;
   padding-right: 35px;
@@ -841,7 +837,9 @@ ul {
   background: url("./../img/sprite.png") no-repeat;
   background-position: -10px -514px;
   cursor: pointer;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .index-slider__controls {
@@ -886,9 +884,9 @@ ul {
   background: #ee3643;
 }
 
-#button-1:checked ~ .index-slider__inner .index-slider__slides { transform: translateX(0px); }
+#button-1:checked ~ .index-slider__inner .index-slider__slides { -webkit-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0px); }
 
-#button-2:checked ~ .index-slider__inner .index-slider__slides { transform: translateX(-620px); }
+#button-2:checked ~ .index-slider__inner .index-slider__slides { -webkit-transform: translateX(-620px); -ms-transform: translateX(-620px); transform: translateX(-620px); }
 
 /* pupular */
 .tools .popular-items {
@@ -1031,7 +1029,9 @@ ul {
   z-index: -10;
   top: 42px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-transform: uppercase;
 }
 
@@ -1097,7 +1097,9 @@ ul {
 .brand-logo:active {
   opacity: .3;
   box-shadow: 5px 10px 30px #a9adb5;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .brand-logo img {
@@ -1268,11 +1270,11 @@ ul {
   line-height: 24px;
 }
 
-#btn-1:checked ~ .services-slider__inner .services-slider__slides { transform: translateX(0); }
+#btn-1:checked ~ .services-slider__inner .services-slider__slides { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
 
-#btn-2:checked ~ .services-slider__inner .services-slider__slides { transform: translateX(-380px); }
+#btn-2:checked ~ .services-slider__inner .services-slider__slides { -webkit-transform: translateX(-380px); -ms-transform: translateX(-380px); transform: translateX(-380px); }
 
-#btn-3:checked ~ .services-slider__inner .services-slider__slides { transform: translate(-760px); }
+#btn-3:checked ~ .services-slider__inner .services-slider__slides { -webkit-transform: translate(-760px); -ms-transform: translate(-760px); transform: translate(-760px); }
 
 /* ELIVERY */
 .delivery {
@@ -1322,7 +1324,7 @@ ul {
   height: 158px;
 }
 
-.delivery-map__map-frame { transform: translate(-100px, 200px); }
+.delivery-map__map-frame { -webkit-transform: translate(-100px, 200px); -ms-transform: translate(-100px, 200px); transform: translate(-100px, 200px); }
 
 
 .delivery-details__text,
@@ -1358,7 +1360,9 @@ ul {
   display: inline-block;
   vertical-align: middle;
   color: #fb565a;
-  transform: scale(2.5, 1);
+  -webkit-transform: scale(2.5, 1);
+      -ms-transform: scale(2.5, 1);
+          transform: scale(2.5, 1);
 }
 /* padding */
 .footer-top { background: #32425c; }
@@ -1948,7 +1952,9 @@ ul {
 .sort-menu__arrow--down {
   top: 14px;
   right: 17px;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .sort-menu__arrow--active { border-color: transparent transparent #ee3643  transparent; }
@@ -2096,7 +2102,9 @@ ul {
   padding-top: 65px;
   background: #ffffff;
   box-shadow: 0 -5px 0 0 #ee3643;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cart-notification__btn:hover { background: #ca2c37; }
@@ -2188,7 +2196,9 @@ ul {
   background: #ffffff;
   box-shadow: 0 5px 35px 0 #a2a2a2,
   0 -7px 0 0 #ee3643;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .icon-close {
@@ -2209,7 +2219,9 @@ ul {
   width: 28px;
   height: 5px;
   background: #ee3643;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .icon-close::after {
@@ -2220,7 +2232,9 @@ ul {
   width: 28px;
   height: 5px;
   background: #ee3643;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 
@@ -2377,7 +2391,9 @@ ul {
   margin-bottom: 150px;
   top: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cart-notification__no-js {
@@ -2387,5 +2403,67 @@ ul {
   top: 20px;
   left: 50%;
   margin-bottom: 150px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+
+@-webkit-keyframes bounce {
+ 0% {
+transfrom: translateY(-1000px);
+}
+
+50% {
+-webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+}
+
+80% {
+-webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+}
+
+90% {
+-webkit-transform: translateY(100px);
+        transform: translateY(100px);
+}
+
+100% {
+-webkit-transform: translateY(0px);
+        transform: translateY(0px);
+}
+}
+
+@keyframes bounce {
+ 0% {
+transfrom: translateY(-1000px);
+}
+
+50% {
+-webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+}
+
+80% {
+-webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+}
+
+90% {
+-webkit-transform: translateY(100px);
+        transform: translateY(100px);
+}
+
+100% {
+-webkit-transform: translateY(0px);
+        transform: translateY(0px);
+}
+}
+
+.bounce {
+animatiion-name: bounce;
+-webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+}
+
+
