@@ -143,7 +143,7 @@ ul {
   width: 17px;
   height: 17px;
   opacity: .3;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -37px -736px;
 }
 
@@ -175,7 +175,7 @@ ul {
   width: 17px;
   height: 17px;
   opacity: 1;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -725px;
 }
 
@@ -206,7 +206,7 @@ ul {
   width: 14px;
   height: 16px;
   opacity: .3;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -64px -367px;
 }
 
@@ -264,7 +264,7 @@ ul {
   width: 17px;
   height: 16px;
   opacity: .3;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -699px;
 }
 
@@ -353,7 +353,7 @@ ul {
   left: 12px;
   width: 19px;
   height: 19px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -59px -442px;
 }
 
@@ -407,7 +407,7 @@ ul {
   left: 13px;
   width: 20px;
   height: 17px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -622px;
 }
 
@@ -428,7 +428,7 @@ ul {
   left: 13px;
   width: 20px;
   height: 17px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -41px -599px;
 }
 
@@ -453,7 +453,7 @@ ul {
   width: 20px;
   height: 18px;
   opacity: .3;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -40px -626px;
 }
 
@@ -465,7 +465,7 @@ ul {
   width: 21px;
   height: 17px;
   opacity: .3;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -42px -514px;
 }
 
@@ -500,7 +500,7 @@ ul {
   left: 13px;
   width: 20px;
   height: 17px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -622px;
 }
 
@@ -563,7 +563,7 @@ ul {
   position: absolute;
   top: 30px;
   right: 42px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
 }
 
 .facility-item:nth-child(1)::before {
@@ -614,7 +614,7 @@ ul {
   right: 0;
   width: 60px;
   height: 59px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -216px;
 }
 
@@ -626,7 +626,7 @@ ul {
   right: 0;
   width: 60px;
   height: 59px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -216px;
 }
 
@@ -828,7 +828,7 @@ ul {
   left: 25px;
   width: 22px;
   height: 40px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -514px;
   cursor: pointer;
 }
@@ -840,7 +840,7 @@ ul {
   right: 21px;
   width: 22px;
   height: 40px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -514px;
   cursor: pointer;
   -webkit-transform: rotate(180deg);
@@ -1062,7 +1062,7 @@ ul {
   left: 10px;
   width: 17px;
   height: 16px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -699px;
 }
 
@@ -1196,7 +1196,7 @@ ul {
   left: 230px;
   width: 10px;
   height: 272px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -55px -769px;
 }
 
@@ -1235,7 +1235,7 @@ ul {
   right: 1px;
   width: 468px;
   height: 261px;
-  background: url("./../img/bg-sprite.png") no-repeat;
+  background: url("../views/img/bg-sprite.png") no-repeat;
   background-position: -10px -0;
 }
 
@@ -1246,7 +1246,7 @@ ul {
   right: -27px;
   width: 465px;
   height: 285px;
-  background: url("./../img/bg-sprite.png") no-repeat;
+  background: url("../views/img/bg-sprite.png") no-repeat;
   background-position: -10px -271px;
 }
 
@@ -1257,7 +1257,7 @@ ul {
   right: 0;
   width: 389px;
   height: 283px;
-  background: url("./../img/bg-sprite.png") no-repeat;
+  background: url("../views/img/bg-sprite.png") no-repeat;
   background-position: -10px -566px;
 }
 
@@ -1490,7 +1490,7 @@ ul {
   left: 10px;
   width: 20px;
   height: 12px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -677px;
 }
 
@@ -1501,7 +1501,7 @@ ul {
   left: 15px;
   width: 10px;
   height: 18px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -35px -763px;
 }
 
@@ -1513,7 +1513,7 @@ ul {
   left: 12px;
   width: 17px;
   height: 17px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -37px -709px;
 }
 
@@ -1607,7 +1607,7 @@ ul {
   height: 12px;
   font-size: 13px;
   line-height: 18px;
-  background: url("./../img/sprite.png");
+  background: url("../views/img/sprite.png");
   background-position: -10px -752px;
 }
 
@@ -1620,7 +1620,7 @@ ul {
   left: 29px;
   width: 8px;
   height: 12px;
-  background: url("./../img/sprite.png");
+  background: url("../views/img/sprite.png");
   background-position: -70px -626px;
 }
 
@@ -1631,7 +1631,7 @@ ul {
   left: -23px;
   width: 8px;
   height: 12px;
-  background: url("./../img/sprite.png");
+  background: url("../views/img/sprite.png");
   background-position: -70px -626px;
 }
 
@@ -1822,7 +1822,7 @@ ul {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -860px;
 }
 
@@ -1833,7 +1833,7 @@ ul {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -890px;
 }
 
@@ -2151,7 +2151,7 @@ ul {
   left: 95px;
   width: 39px;
   height: 29px;
-  background: url("./../img/sprite.png") no-repeat;
+  background: url("../views/img/sprite.png") no-repeat;
   background-position: -10px -442px;
 }
 
