@@ -818,7 +818,7 @@ ul {
 
 .icon-slider__arrows {
   position: relative;
-  widows: 100%;
+  width: 100%;
 }
 
 /* left arrow */
@@ -1230,7 +1230,7 @@ ul {
 #btn-1:checked ~ .services-slider__menu .services-slider__controls label[for="btn-1"]::after {
   content: "";
   position: absolute;
-  z-index: 10px;
+  z-index: 10;
   top: 91px;
   right: 1px;
   width: 468px;
@@ -1283,7 +1283,7 @@ ul {
 
 #btn-3:checked ~ .services-slider__inner .services-slider__slides { -webkit-transform: translate(-760px); -ms-transform: translate(-760px); transform: translate(-760px); }
 
-/* ELIVERY */
+/* DELIVERY */
 .delivery {
   width: 100%;
   font-size: 0;
@@ -2413,70 +2413,65 @@ ul {
 
 @-webkit-keyframes bounce {
   0% {
-    transform: translateY(-1000px);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+
   }
 
-  50% {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
-  }
-
-  65% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-
-  80% {
+  20%, 70%, 100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
+
   }
 
-  90% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+  40% {
+
+    -webkit-transform: translateY(-70px);
+
+    transform: translateY(-70px);
   }
 
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+  85% {
+
+    -webkit-transform: translateY(-30px);
+
+    transform: translateY(-30px);
   }
 }
 
+
 @keyframes bounce {
   0% {
-    transform: translateY(-1000px);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+
   }
 
-  50% {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
-  }
-
-  65% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-
-  80% {
+  20%, 70%, 100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
+
   }
 
-  90% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+  40% {
+
+    -webkit-transform: translateY(-70px);
+
+    transform: translateY(-70px);
   }
 
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+  85% {
+
+    -webkit-transform: translateY(-30px);
+
+    transform: translateY(-30px);
   }
 }
 
 .bounce {
   animation-name: bounce;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
 }
 
 
